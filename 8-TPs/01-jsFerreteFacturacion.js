@@ -54,18 +54,23 @@ function PrecioFinal ()
     let productoDos;
     let productoTres;
     let resultadoSuma;
+    let precioIva;
+    let iva;
+    let resultadoTotal;
 
     productoUno = document.getElementById("txtIdPrecioUno").value;
     productoDos = document.getElementById("txtIdPrecioDos").value; 
     productoTres = document.getElementById("txtIdPrecioTres").value;
+    iva = 21;
 
     productoUno = parseInt(productoUno);
     productoDos = parseInt(productoDos);
     productoTres = parseInt(productoTres);
 
     resultadoSuma = productoUno + productoDos + productoTres;
+    precioIva = (resultadoSuma * iva)/100;
 
-    resultadoSuma = resultadoSuma * 1.21;
+    resultadoTotal = resultadoSuma + precioIva;
 
-    alert("La suma de los productos mas IVA " + resultadoSuma);
+    alert("La suma de los productos mas IVA " + resultadoTotal);
 }
