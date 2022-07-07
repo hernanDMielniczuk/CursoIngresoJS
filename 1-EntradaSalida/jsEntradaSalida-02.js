@@ -8,14 +8,15 @@ y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
 	//declaro variables
-	let nombre;  //almacena datos-caracteres-booleanos-numeros-cadenaDeCaracteres
+	let nombre;  //almacena datos-caracteres-booleanos-numeros-cadenaDeCaracteres(Stings)
 	
-	//tomo datos
+	//tomo datos- le asignamos un valor
+	// Donde lo guardo < = > Que guardo
 	nombre = prompt("Escribe tu nombre");
 
+	// Mostramos la info por alert.
 	alert(nombre);
 }
-
 
 /*
 // Pedir datos
